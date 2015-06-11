@@ -46,7 +46,7 @@ module.exports = function(grunt) {
 
 function replace(code){
     code = code.replace(/'''([\s\S]*)'''/g, function(){
-        return "'''" + arguments[1].replace(/\r/g, '\\\r').replace(/\n/g, '\\\n') + "'''";
+        return "'" + arguments[1].replace(/\r/g, '\\\r').replace(/\n/g, '\\\n') + "'";
     });
 
     return code;
