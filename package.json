@@ -1,41 +1,44 @@
 {
-    "name": "grunt-triple-quotes",
-    "description": "javascript triple quotes multi lines",
-    "version": "0.0.1",
-    "homepage": "https://github.com/bigfactory/grunt-triple-quotes",
-    "author": {
-        "name": "xiaocong.hxc",
-        "email": "xiaocong.hxc@qq.com"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/bigfactory/grunt-triple-quotes.git"
-    },
-    "bugs": {
-        "url": "https://github.com/bigfactory/grunt-triple-quotes/issues"
-    },
-    "licenses": [{
-        "type": "MIT",
-        "url": "https://github.com/bigfactory/grunt-triple-quotes/blob/master/LICENSE-MIT"
-    }],
-    "engines": {
-        "node": ">= 0.8.0"
-    },
-    "scripts": {
-        "test": "grunt"
-    },
-    "dependencies": {
-    },
-    "devDependencies": {
-        "grunt-contrib-jshint": "^0.9.2",
-        "grunt-contrib-clean": "^0.5.0",
-        "grunt-contrib-nodeunit": "^0.3.3",
-        "grunt": "~0.4.5"
-    },
-    "peerDependencies": {
-        "grunt": "~0.4.5"
-    },
-    "keywords": [
-        "gruntplugin"
-    ]
+  "name": "grunt-triple-quotes",
+  "description": "javascript triple quotes multi lines",
+  "version": "0.0.2",
+  "homepage": "https://github.com/bigfactory/grunt-triple-quotes",
+  "author": {
+    "name": "xiaocong.hxc",
+    "email": "xiaocong.hxc@qq.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bigfactory/grunt-triple-quotes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bigfactory/grunt-triple-quotes/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/bigfactory/grunt-triple-quotes/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "dependencies": {
+    "chalk": "^1.0.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
 }

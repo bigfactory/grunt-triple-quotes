@@ -20,13 +20,21 @@ module.exports = function(grunt) {
             var src;
 
             src = f.src.map(function(srcFile) {
-                var destFile = path.join(f.dest, srcFile);
-                var srcCode = grunt.file.read(srcFile);
-                
+
+                var destFile, srcCode;
+
+                if(f.dest){
+                    destFile = path.join(f.dest, srcFile);
+                }
+                else{
+                    destFile = srcFile;
+                }
+
+                srcCode = grunt.file.read(srcFile);
                 srcCode = replace(srcCode);
 
                 grunt.file.write(destFile, srcCode);
-                grunt.log.writeln('File ' + chalk.cyan(destFile) + ' created');
+                grunt.log.writeln('File ' + chalk.cyan(destFile) + ' updated');
                 
             });
 
